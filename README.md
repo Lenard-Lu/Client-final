@@ -54,9 +54,9 @@
 		start a Terminal under the server folder;
 		npm install
 		npm start
-	3)  go to client repo foler to start the client side
+	3)  go to client repo folder to start the client side
 		start a Terminal under the client folder;
-		npm install --force --production=dev
+		npm install --force --production=dev    
 		npm start
 		
 		
