@@ -210,7 +210,7 @@ export const getUserList = (type) => {
 
 // Create job asynchronous action
 export const createJob = (job) => {
-  const {jobTitle, jobType, content,company,position,posterId} = job
+  const {jobTitle, jobType, content, company, position, postCode, posterId} = job
   // Do the front-end check of the form, if it fails, return a synchronous action of errorMsg
   if(!jobTitle) {
     return errorMsg('Job Title is required!')
@@ -222,6 +222,8 @@ export const createJob = (job) => {
     return errorMsg('Company is required!')
   }else if(!position){
     return errorMsg('Position is required!')
+  }else if(!postCode){
+    return errorMsg('Post Code is required!')
   }else if(!posterId){
     return errorMsg('Poster Id is required!')
   }

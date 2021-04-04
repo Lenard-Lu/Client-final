@@ -7,13 +7,18 @@
     "axios": "^0.18.0",
     "babel": "^6.23.0",
     "babel-preset": "^1.1.7",
+    "husky": "^6.0.0",
     "jest-cli": "^26.6.3",
     "js-cookie": "^2.2.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
     "prop-types": "^15.6.1",
     "rc-queue-anim": "^1.5.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
+    "react-geolocation": "^1.0.4",
     "react-redux": "^5.0.7",
+    "react-redux-geolocation": "^1.0.14",
     "react-router-dom": "^4.2.2",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
@@ -29,12 +34,13 @@
     "react-scripts": "1.1.4",
     "redux-devtools-extension": "^2.13.2"
   },
-  "scripts": {
+  "scripts": {    
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "jest",
     "eject": "react-scripts eject",
-    "client": "serve build"
+    "client": "serve build",
+    "precommit": "lint-staged"
   },
   "proxy": "http://localhost:4000"
 }

@@ -58,6 +58,11 @@
 		start a Terminal under the client folder;
 		npm install --force --production=dev    
 		npm start
+
+
+local server: "http://localhost:4000"
+Cloud server: "https://hireeasy-server.herokuapp.com"
+
 		
 		
 		
