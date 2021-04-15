@@ -41,5 +41,5 @@
     "eject": "react-scripts eject",
     "client": "serve build"
   },
-  "proxy": "https://hireeasy-server.herokuapp.com/"
+  "proxy": "http://hireeasy.herokuapp.com/"
 }

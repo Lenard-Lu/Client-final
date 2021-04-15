@@ -51,7 +51,12 @@ function initIO(dispatch, userid) {
   // Before creating an object: Determine whether the object already exists, and only create it if it does not exist
   if(!io.socket) {
     // Connect to the server, get the connection object with the server
-    io.socket = io('ws://localhost:4000') 
+    //io.socket = io('ws://localhost:4000') 
+    //io.socket = io('ws://hireeasy-server.herokuapp.com:4000') //Nabil Server
+      io.socket = io('ws://hireeasy.herokuapp.com:4000')     // Lenard Server
+
+    
+    
 
     //if connect to the cloud server
     //const socket = io('https://hireeasy-server.herokuapp.com')  
